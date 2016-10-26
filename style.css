@@ -1,0 +1,191 @@
+html{
+	font-size: 62.5%;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	margin: 0;
+	background-color: #ffffff;
+}
+
+.site_header{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0;
+	font-family: 'Roboto Condensed', sans-serif;
+}
+.site_header h1{
+	padding-right: 50px;
+	padding-top: 50px;
+	padding-bottom: 40px;
+	margin-top: 0;
+	margin-bottom: 0;
+	text-align: right;
+	font-size: 2.8rem;
+	letter-spacing: 2px;
+	font-weight: normal;
+	width: calc(50% -  50px);
+}
+.site_header h1::first-letter{
+	font-size: 3rem;
+}
+.site_header h1 span{
+	display: block;
+	font-size: 2rem;
+	letter-spacing: 3.7px;
+	color: #c84873;
+	padding-top: 0;
+	margin-top: 0;
+	line-height: 90%;
+}
+#info{
+	background-color: #eeeeee;
+	width: 100%;
+}
+#info-contener{
+	width: 960px;
+	margin-left: auto;
+	margin-right: auto;
+	overflow: hidden;
+	background-image: url(img/folders.jpg);
+	background-position: top left;
+	background-repeat: no-repeat;
+	background-size: 50%;
+}
+#info-text{
+	width: 50%;
+	float: right;
+	font-size: 1.4rem;
+	line-height: 150%;
+	margin-top: 20px;
+	margin-bottom: 20px;
+}
+#info-text p{
+	margin-right: 20px;
+	margin-left: 30px;
+	margin-top: 30px;
+	margin-bottom: 0px;
+}
+#info-text p::first-letter{
+	font-size: 2.1rem;
+}
+#info-text  ul{
+	padding: 0;
+	margin: 0;
+	margin-left: 45px;
+	margin-top: 5px;
+	color: #c84873;
+}
+#contact{
+	background-image:  url('img/calculator.jpg');
+	background-repeat: no-repeat;
+	margin-left: 50%;
+}
+#contact-text{
+	position: relative;
+	top: 0;
+	left: -480px;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	margin-left: 30px;
+
+}
+
+#contact-text h2{
+	font-size: 2.1rem;
+	font-weight: normal;
+	padding-left: 180px;
+	
+}
+#contact-text h3{
+	font-size: 1.5rem;
+	font-weight: normal;
+	color: #c84873;
+	margin-top: 20px;
+	margin-bottom: 0;
+}
+#contact-text h3::first-letter{
+	font-size: 2.1rem;
+}
+#contact-text p{
+	font-size: 1.4rem;
+	margin-top: 5px;
+	margin-bottom: 0;
+}
+#contact-text p.break{
+	margin-bottom: 20px;
+}
+#contact-text a{
+	color: #000000;
+}
+footer{
+	background-color: #effcfc;
+	padding-top: 60px;
+	padding-bottom: 60px;
+}
+footer p{
+	margin-left: auto;
+	margin-right: auto;
+	margin-top: 0;
+	margin-bottom: 0px;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+@media only screen and  (max-device-width : 767px) {
+	.site_header {
+		width: calc(100% - 30px);
+		margin-right: 30px;
+	}
+	.site_header h1{
+		width: 100%;
+		
+	}
+	#info-contener{
+		width: 100%;
+		background-size:  100% 100%;
+	}
+	
+	#info-text {
+		width: 100%;
+		background-color: #eeeeee;
+		margin-top: 200px;
+		margin-bottom: 0;
+	}
+	#contact{
+		margin-left: 0;
+		width: 100%;
+		overflow: hidden;
+	}
+	#contact-text{
+		width: 100%;
+		top: 0;
+		left: 0;
+		margin-top: 200px;
+		padding-bottom: 15px;
+		background-color: #ffffff;
+		margin-left: 0;
+	}
+	#contact-text>*{
+		padding-left: 30px;
+	}
+
+}
+@media only screen and (min-device-width : 768px) and (max-device-width : 960px) {
+	#info-contener{
+		width: 768px;
+	}
+	
+	#info-contener p{
+		margin-right: 5px;
+		margin-left: 15px;
+		margin-top: 5px;
+	}
+	#contact-text{
+		padding-top: 15px;
+		padding-bottom: 15px;
+		margin-left: 15px;
+	}
+
+}
